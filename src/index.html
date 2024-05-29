@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>product-preview</title>
+  </head>
+  <body>
+    <div
+      class="bg-[#F3EAE3] md:flex md:items-center md:justify-center h-[100vh] p-[20px]"
+    >
+      <div class="md:flex md:w-[50%]">
+        <!-- img -->
+        <div class="md:w-[50%]">
+          <img
+            src="../images/image-product-desktop.jpg"
+            alt=""
+            class="rounded-l-lg hidden md:block"
+          />
+          <img
+            src="../images/image-product-mobile.jpg"
+            alt=""
+            class="md:hidden rounded-t-xl"
+          />
+        </div>
+        <!-- content -->
+        <div class="bg-white p-[20px] md:w-[50%] rounded-b-lg md:rounded-r-lg">
+          <p class="font-montserrat text-sm tracking-[6px] font-semibold text-[#B0B0B8] mt-2">PERFUME</p>
+          <h1 class="font-fraunces text-3xl md:text-4xl font-bold mt-2 mb-2 md:mt-4 md:mb-4">Gabrielle Essence Eau De Parfum</h1>
+          <p class="font-montserrat text-sm md:text-lg leading-relaxed font-medium text-[#B0B0B8]">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex items-center mt-4 md:mt-6">
+            <p class=""><strong class="text-[#3D7E66] font-fraunces text-3xl md:text-4xl">$149.99</strong></p>
+            <p><strike class="ml-4 text-">$169.99</strike></p>
+          </div>
+          <button class="bg-[#3D7E66] flex items-center justify-center p-[4%] w-[100%] rounded-lg gap-3 mt-5 mb-5 md:mt-7">
+            <i><img src="../images/icon-cart.svg" alt="" /></i>
+            <p class="font-montserrat text-white font-bold">Add to Cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
